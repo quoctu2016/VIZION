@@ -5,7 +5,7 @@
  */
 function StringUpNo(inputString) {
   // Regex to split characters and numbers from a string to array
-  const reg = /([0-9.]+)(?![0-9.])|([a-z]+)(?![a-z])/gi;
+  const reg = /(?:[^.]([0-9.]+)(?![0-9.]))|(?:([a-z]+)(?![a-z]))/gi;
   const arrStr = inputString.match(reg);
   const arrStrLength = arrStr.length;
 
