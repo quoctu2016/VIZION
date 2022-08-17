@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+}
+
+.flex-row-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: #161616;
+}
+
+.container .content {
+    width: 380px;
+    height: 380px;
+    background-color: #a22015;
+    border: 10px solid #000000;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+}
+
+.container .content .middle-box {
+    width: calc(50% - 50px);
+    height: calc(50% - 50px);
+    background-color: #e96a23;
+    border: 30px solid #000000;
+    border-radius: 50%;
+}
+
+.container .content .middle-box .middle-box-content {
+    width: calc(100% - 40px);
+    height: calc(100% - 40px);
+    background-color: #000000;
+    border-radius: 50%;
+}
+
+.container .content .top-left-box {
+    width: calc(50% - 50px);
+    height: calc(50% - 50px);
+    position: absolute;
+    top: 0;
+    transform: translate(calc(-50% - 30px - 20px));
+    background-color: #a22015;
+    border: 30px solid #000000;
+    border-radius: 50%;
+}
+
+.container .content .top-right-box {
+    width: calc(50% - 50px);
+    height: calc(50% - 50px);
+    position: absolute;
+    top: 0;
+    transform: translate(calc(50% + 30px + 20px));
+    background-color: #a22015;
+    border: 30px solid #000000;
+    border-radius: 50%;
+}
+
+.container .content .bottom-center-box {
+    width: calc(50% - 50px);
+    height: calc(50% - 50px);
+    position: absolute;
+    top: 50%;
+    transform: translate(0, calc(50% - 30px));
+    background-color: #a22015;
+    border: 30px solid #000000;
+    border-radius: 50%;
+}
